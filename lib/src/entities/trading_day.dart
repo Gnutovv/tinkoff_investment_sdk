@@ -69,8 +69,7 @@ class TradingDay {
     required this.intervals,
   });
 
-  factory TradingDay.fromProto(pb.TradingDay td) =>
-      TradingDay(
+  factory TradingDay.fromProto(pb.TradingDay td) => TradingDay(
         date: td.date.toDateTime(),
         isTradingDay: td.isTradingDay,
         startTime: td.startTime.toDateTime(),
